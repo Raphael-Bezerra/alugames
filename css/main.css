@@ -92,6 +92,20 @@
     box-shadow: 0px 0px 24px 8px rgba(24, 118, 232, 0.25);
 
     margin-bottom: 1rem;
+
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard__item__img img {
+    border-radius: inherit;
+}
+
+.dashboard__items__item:hover .dashboard__item__img {
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 32px 10px rgba(24, 118, 232, 0.4);
 }
 
 .dashboard__item__img--rented {
@@ -106,7 +120,8 @@
 
     position: absolute;
     top: 0;
-    
+
+    border-radius: inherit;
     background-color: rgba(1, 8, 14, 0.4);
 }
 
@@ -130,10 +145,21 @@
     border-radius: 1rem;
 
     background-color: #1875E8;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dashboard__item__button:hover {
+    background-color: #2f8bff;
+    transform: translateY(-2px);
 }
 
 .dashboard__item__button--return {
     background-color: #01080E;
+}
+
+.dashboard__item__button--return:hover {
+    background-color: #10202e;
 }
 
 .hachuras {
