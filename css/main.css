@@ -28,6 +28,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: 1086px;
+    width: 100%;
 }
 
 .divisor {
@@ -47,7 +50,8 @@
 .page-title {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: clamp(2.25rem, 6vw, 5rem);
+    text-align: center;
 
     margin-bottom: 2.5rem;
 }
@@ -70,7 +74,9 @@
 
 .dashboard__items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .dashboard__items__item {
